@@ -61,9 +61,9 @@ console.log({ street });
 
 // ---------------------------------------------
 
-const filtarEntreDatas = () =>
+const filtrarEntreDatas = () =>
   companies.filter((entrada) => entrada.start > 1996 && entrada.start <= 2004);
 
-console.log(filtarEntreDatas());
+console.log(filtrarEntreDatas());
 
 // ---------------------------------------------
