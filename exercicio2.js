@@ -21,15 +21,30 @@ const person = {
 
 // ---------------------------------------------
 
+// const imprimirEmpresas = () => {
+//   return companies.map((entrada) => {
+//     return `O nome desta empresa é ${entrada.name} e foi criada em  ${entrada.start}`;
+//   });
+// };
+
+// console.log(imprimirEmpresas());
+
 const imprimirEmpresas = () => {
-  return companies.map((entrada) => {
-    return `O nome desta empresa é ${entrada.name} e foi criada em  ${entrada.start}`;
+  companies.forEach((entrada) => {
+    console.log(
+      `O nome desta empresa é ${entrada.name} e foi criada em  ${entrada.start}`
+    );
   });
 };
 
-console.log(imprimirEmpresas());
+imprimirEmpresas();
 
 // ---------------------------------------------
+
+// const procurarPorData = () =>
+//   companies.filter((entrada) => entrada.start > 1987);
+
+// console.log(procurarPorData());
 
 const procurarPorData = (valor = 1987) =>
   companies.filter((entrada) => entrada.start > valor);
@@ -61,8 +76,13 @@ console.log({ street });
 
 // ---------------------------------------------
 
-const filtrarEntreDatas = () =>
-  companies.filter((entrada) => entrada.start > 1996 && entrada.start <= 2004);
+// const filtrarEntreDatas = () =>
+//   companies.filter((entrada) => entrada.start > 1996 && entrada.start <= 2004);
+
+// console.log(filtrarEntreDatas());
+
+const filtrarEntreDatas = (x = 1996, y = 2004) =>
+  companies.filter((entrada) => entrada.start > x && entrada.start <= y);
 
 console.log(filtrarEntreDatas());
 
