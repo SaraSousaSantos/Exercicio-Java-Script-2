@@ -66,7 +66,7 @@ console.log(soma);
 
 const { name, category } = companies[0];
 
-console.log({ name, category });
+console.log({ name: name, category: category });
 
 // ---------------------------------------------
 
